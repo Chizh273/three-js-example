@@ -1,10 +1,21 @@
 {
-  "name": "svg-animations",
+  "name": "webpack-boilerplate",
   "version": "1.0.0",
-  "description": "",
-  "main": "webpack.config.js",
+  "description": "webpack boilerplate",
+  "keywords": [],
+  "author": "Chizh273",
+  "license": "ISC",
+  "main": "src/js/index.js",
+  "scripts": {
+    "start": "./node_modules/.bin/webpack-dev-server",
+    "build": "./node_modules/.bin/webpack",
+    "build:prod": "NODE_ENV=production ./node_modules/.bin/webpack",
+    "lint:js": "./node_modules/.bin/eslint --ext .js --ext .jsx src",
+    "lint:js:fix": "./node_modules/.bin/eslint --ext .js --ext .jsx src --fix",
+    "lint:scss": "./node_modules/.bin/sass-lint --config ./.sass-lint.yml 'src/**/*.scss' --verbose --no-exit",
+    "lint": "npm run lint:js && npm run lint:scss"
+  },
   "dependencies": {
-    "chroma-sass": "^1.2.6",
     "sanitize.css": "^5.0.0"
   },
   "devDependencies": {
@@ -35,10 +46,9 @@
     "eslint-plugin-standard": "^3.0.1",
     "extract-text-webpack-plugin": "^3.0.0",
     "file-loader": "^1.1.5",
+    "friendly-errors-webpack-plugin": "^1.6.1",
     "html-loader": "^0.5.1",
     "html-webpack-plugin": "^2.30.1",
-    "import-glob-loader": "^1.1.0",
-    "lodash.random": "^3.2.0",
     "node-sass": "^4.5.3",
     "postcss-loader": "^2.0.6",
     "resolve-url-loader": "^2.1.1",
@@ -49,16 +59,5 @@
     "webpack": "^3.6.0",
     "webpack-dev-server": "^2.9.1",
     "webpack-notifier": "^1.5.0"
-  },
-  "scripts": {
-    "start": "./node_modules/.bin/webpack-dev-server",
-    "build": "./node_modules/.bin/webpack",
-    "build:prod": "NODE_ENV=production ./node_modules/.bin/webpack",
-    "lint:js": "./node_modules/.bin/eslint --ext .js src",
-    "lint:scss": "./node_modules/.bin/sass-lint --config ./.sass-lint.yml 'src/**/*.scss' --verbose --no-exit",
-    "lint": "npm run lint:js && npm run lint:scss"
-  },
-  "keywords": [],
-  "author": "Chizh273",
-  "license": "ISC"
+  }
 }

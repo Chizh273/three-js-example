@@ -1,13 +1,14 @@
 @import '~breakpoint-sass/stylesheets/breakpoint';
-@import '~chroma-sass/sass/chroma';
 @import '~sanitize.css';
 
 @import 'mixins/default';
 
-@import 'variables/**/*';
+@import 'variables/colors';
+@import 'variables/sizes';
+@import 'variables/variables';
 
 @import 'base/base';
 @import 'base/forms';
 
-@import 'layout/**/*';
-@import 'components/**/*';
+@import 'layout/flex';
+@import 'components/card';

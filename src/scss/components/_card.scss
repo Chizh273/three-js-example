@@ -1,5 +1,5 @@
 .card {
-  box-shadow: 2px 2px 50px -1px color(shadow-ligth);
+  box-shadow: 2px 2px 50px -1px $shadow-ligth;
   padding: 10px;
   width: 300px;
 
@@ -23,7 +23,7 @@
   }
 
   .card__text {
-    color: color(text-gray);
+    color: $text-gray;
     font-size: 16px;
     margin-top: 0;
   }

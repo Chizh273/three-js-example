@@ -1,28 +1,5 @@
-// Colors
-//
-// Use the `color()` function to add colors to CSS properties. To learn more,
-// [read the Chroma documentation](http://johnalbin.github.io/chroma/).
-
-// Define the default color scheme's color names.
-$chroma: define-default-color-scheme('branding', 'The site\'s main colors. Can be used to define colors in other color schemes.');
-
-$chroma: add-colors((
-  black: #000000,
-  white: #ffffff,
-
-  light-grey: #eeeeee,
-  dark-grey: #333333,
-  shadow-light-grey: rgba(153, 153, 153, 1)
-));
-
-// Define color names for functional uses.
-$chroma: define-color-scheme('functional', 'Colors used by functional parts of the design.');
-$chroma: add-colors('functional', (
-  bg-color: 'white',
-  bg-white: 'white',
-  bg-black: 'black',
-  text-gray: 'dark-grey',
-  shadow-ligth: 'shadow-light-grey'
-));
-
-$chroma-active-scheme: 'functional';
+$bg-color: #ffffff;
+$bg-white: $bg-color;
+$bg-black: #000000;
+$text-gray: #333333;
+$shadow-ligth: rgba(153, 153, 153, 1);
