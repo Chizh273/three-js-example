@@ -18,31 +18,19 @@ module.exports = {
         use: [
           {
             loader: 'css-loader',
-            options: {
-              sourceMap: !config.isProd
-            }
+            options: {sourceMap: !config.isProd}
           },
           {
             loader: 'postcss-loader',
-            options: {
-              sourceMap: !config.isProd,
-              plugins: (loader) => [
-                require('autoprefixer')(
-                  ['last 10 version', 'ie >= 10', 'Firefox 15'])
-              ]
-            }
+            options: {sourceMap: !config.isProd}
           },
           {
             loader: 'resolve-url-loader',
-            options: {
-              sourceMap: !config.isProd
-            }
+            options: {sourceMap: !config.isProd}
           },
           {
             loader: 'sass-loader',
-            options: {
-              sourceMap: !config.isProd
-            }
+            options: {sourceMap: !config.isProd}
           }
         ],
         // use style-loader in development

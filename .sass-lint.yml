@@ -7,7 +7,7 @@ options:
 files:
   ignore:
     - '**/index.scss'
-    - '**/mixins/_default.sass'
+    - '**/mixins/_rem.sass'
     - '**/base/_base.scss'
     - '**/_colors.scss'
 rules:
