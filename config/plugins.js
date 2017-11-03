@@ -8,7 +8,13 @@ const SassLintPlugin = require('sasslint-webpack-plugin')
 const CleanWebpackPlugin = require('clean-webpack-plugin')
 const FriendlyErrorsPlugin = require('friendly-errors-webpack-plugin')
 
+const develop = require('../environments/develop')
+const production = require('../environments/production')
+
 const plugins = [
+  new webpack.DefinePlugin({
+    'process.env': config.isProd ? production : develop
+  }),
   new SassLintPlugin({
     configFile: path.join(__dirname, '..', '.sass-lint.yml'),
     glob: 'src/**/*.s?(a|c)ss',
