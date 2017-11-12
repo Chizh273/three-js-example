@@ -16,7 +16,9 @@
     "lint": "npm run lint:js && npm run lint:scss"
   },
   "dependencies": {
-    "sanitize.css": "^5.0.0"
+    "sanitize.css": "^5.0.0",
+    "three": "^0.88.0",
+    "three-orbit-controls": "^82.1.0"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
